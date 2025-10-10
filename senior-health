@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Key insights on how medicinal plants support senior health, cognitive function, chronic disease management, and wellness.">
+    <title>Senior Health Insights - Chiang Mai Herbal Wisdom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-seedling"></i>
+                <span>Chiang Mai Herbal Wisdom</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="plants.html">Plants Database</a></li>
+                    <li><a href="preparations.html">Preparations</a></li>
+                    <li><a href="senior-health.html" class="active">Senior Health</a></li>
+                    <li><a href="safety.html">Safety</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Senior Health Insights</h1>
+                <p>Evidence-based information on how traditional medicinal plants support aging populations and manage chronic conditions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Categories -->
+    <section class="health-section">
+        <div class="container">
+            <div class="health-categories">
+                <!-- Cognitive Support -->
+                <div class="health-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h2>Cognitive Support</h2>
+                    </div>
+                    <div class="category-content">
+                        <div class="health-info">
+                            <p>Age-related cognitive decline and dementia are significant concerns for seniors. Traditional Northern Thai medicinal practices offer natural solutions that have been validated by modern research.</p>
+                            
+                            <h3>Key Plants for Cognitive Health:</h3>
+                            <div class="key-plants">
+                                <div class="plant-item">
+                                    <h4>Butterfly Pea (Clitoria ternatea)</h4>
+                                    <p>Rich in anthocyanins that cross the blood-brain barrier, enhancing memory and reducing oxidative stress in neural tissues. Studies show improved cognitive performance in elderly subjects after 8 weeks of regular consumption.</p>
+                                </div>
+                                <div class="plant-item">
+                                    <h4>Gotu Kola (Centella asiatica)</h4>
+                                    <p>Contains triterpenoids that stimulate collagen production and improve cerebral blood flow. Research from Chiang Mai University demonstrates significant improvement in memory retention and cognitive processing speed in seniors with mild cognitive impairment.</p>
+                                </div>
+                                <div class="plant-item">
+                                    <h4>Turmeric (Curcuma longa)</h4>
+                                    <p>Curcumin's anti-inflammatory properties aid in reducing neuroinflammation linked to Alzheimer's disease. Long-term use shows protective effects against age-related cognitive decline.</p>
+                                </div>
+                            </div>
+                            
+                            <h3>Recommended Protocol:</h3>
+                            <p>Combine Butterfly Pea tea (morning) with Gotu Kola tea (afternoon) for synergistic cognitive enhancement. Add Turmeric to daily meals for long-term neuroprotection.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chronic Disease Management -->
+                <div class="health-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h2>Chronic Disease Management</h2>
+                    </div>
+                    <div class="category-content">
+                        <div class="health-info">
+                            <p>Seniors often manage multiple chronic conditions simultaneously. Traditional medicinal plants offer cost-effective, natural approaches that complement conventional treatments.</p>
+                            
+                            <h3>Key Plants for Chronic Conditions:</h3>
+                            <div class="key-plants">
+                                <div class="plant-item">
+                                    <h4>Moringa (Moringa oleifera)</h4>
+                                    <p>Exceptionally effective for diabetes management through natural blood sugar regulation. Contains isothiocyanates that help maintain healthy glucose levels while providing comprehensive nutritional support for malnutrition common in elderly populations.</p>
+                                </div>
+                                <div class="plant-item">
+                                    <h4>Andrographis (Andrographis paniculata)</h4>
+                                    <p>Widely used for immune support, particularly valuable for seniors whose immune function naturally declines with age. Reduces frequency and severity of respiratory infections, providing liver protection when taking multiple medications.</p>
+                                </div>
+                                <div class="plant-item">
+                                    <h4>Greater Galangal (Alpinia galanga)</h4>
+                                    <p>Addresses digestive issues common in seniors with polypharmacy. Galangin compounds stimulate digestive enzyme production and have antimicrobial properties that support gut health without interfering with most medications.</p>
+                                </div>
+                            </div>
+                            
+                            <h3>Recommended Protocol:</h3>
+                            <p>Incorporate Moringa into daily meals for diabetes support, use Andrographis during cold season for immune protection, and add Greater Galangal to cooking for digestive health.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bone and Skin Health -->
+                <div class="health-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-bone"></i>
+                        </div>
+                        <h2>Bone and Skin Health</h2>
+                    </div>
+                    <div class="category-content">
+                        <div class="health-info">
+                            <p>Osteoporosis and skin ulcers are prevalent in elderly populations. Traditional remedies offer targeted support for these age-related conditions.</p>
+                            
+                            <h3>Key Plants for Bone & Skin:</h3>
+                            <div class="key-plants">
+                                <div class="plant-item">
+                                    <h4>Devil's Backbone (Cissus quadrangularis)</h4>
+                                    <p>Prioritized for osteoporosis prevention and treatment. Accelerates bone healing after fractures by providing calcium and vitamin K for bone density maintenance. Particularly beneficial for postmenopausal women and elderly men at risk for osteoporosis.</p>
+                                </div>
+                                <div class="plant-item">
+                                    <h4>Pennywort (Hydrocotyle javanica)</h4>
+                                    <p>Reduces leg swelling and edema common in elderly through improved microcirculation. Supports healing of age-related skin ulcers and wounds, particularly valuable for diabetic seniors with slow-healing injuries.</p>
+                                </div>
+                            </div>
+                            
+                            <h3>Recommended Protocol:</h3>
+                            <p>Use Devil's Backbone supplements for bone density support and osteoporosis prevention. Apply Pennywort poultices to swollen areas and slow-healing wounds for circulatory and healing benefits.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seasonal Availability -->
+                <div class="health-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h2>Seasonal Availability & Consistent Access</h2>
+                    </div>
+                    <div class="category-content">
+                        <div class="health-info">
+                            <p>Understanding seasonal availability ensures consistent access to preventive care throughout the year.</p>
+                            
+                            <h3>Year-Round Plants:</h3>
+                            <ul>
+                                <li><strong>Turmeric</strong> - Available year-round, ensuring consistent anti-inflammatory support</li>
+                                <li><strong>Butterfly Pea</strong> - Year-round availability for continuous cognitive support</li>
+                                <li><strong>Pennywort</strong> - Available throughout the year for ongoing circulatory support</li>
+                                <li><strong>Andrographis</strong> - Year-round access for immune system maintenance</li>
+                            </ul>
+                            
+                            <h3>Seasonal Plants:</h3>
+                            <ul>
+                                <li><strong>Gotu Kola</strong> - Rainy season (June-October), perfect for monsoon-related health challenges</li>
+                                <li><strong>Greater Galangal</strong> - Rainy season availability aligns with increased need for immune support</li>
+                                <li><strong>Moringa</strong> - Dry season (November-May) provides nutritional support during cooler months</li>
+                                <li><strong>Devil's Backbone</strong> - Dry season availability supports bone health during winter months</li>
+                            </ul>
+                            
+                            <h3>Planning Strategy:</h3>
+                            <p>Stock up on dried herbs during peak seasons. Many plants can be dried and stored for year-round use, ensuring consistent access to traditional remedies regardless of season.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-seedling"></i>
+                    <span>Chiang Mai Herbal Wisdom</span>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="plants.html">Plants Database</a></li>
+                        <li><a href="preparations.html">Preparations</a></li>
+                        <li><a href="senior-health.html">Senior Health</a></li>
+                        <li><a href="safety.html">Safety Guidelines</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chiang Mai Herbal Wisdom. Based on research from Chiang Mai University and Thai Traditional Medicine sources.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
