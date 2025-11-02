@@ -1,240 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover medicinal plants of Northern Thailand for senior wellness and chronic disease management.">
-    <title>Chiang Mai Herbal Wisdom - Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-  body {
-    transition: font-size 0.3s ease;
-    font-size: 16px; /* Default */
-  }
-  .font-controls {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 8px;
-    border-radius: 20px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    font-family: Arial, sans-serif;
-  }
-  .font-controls button {
-    background: #4CAF50;
-    color: white;
-    border: none;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 0 4px;
-    font-size: 16px;
-  }
-  .font-controls button:hover {
-    background: #388E3C;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover medicinal plants of Northern Thailand for senior wellness and chronic disease management.">
+  <title>Chiang Mai Herbal Wisdom - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      transition: font-size 0.3s ease;
+      font-size: 16px;
+    }
+    .font-controls {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 8px;
+      border-radius: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      font-family: Arial, sans-serif;
+    }
+    .font-controls button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 0 4px;
+      font-size: 16px;
+    }
+    .font-controls button:hover {
+      background: #388E3C;
+    }
+  </style>
 
-<script>
-  // Load saved font size
-  document.addEventListener('DOMContentLoaded', () => {
-    const savedSize = localStorage.getItem('fontSize') || '16';
-    document.body.style.fontSize = savedSize + 'px';
-    
-    // Increase font
-    window.increaseFont = () => {
-      let size = parseInt(getComputedStyle(document.body).fontSize);
-      if (size < 24) { // Max size: 24px
-        document.body.style.fontSize = (size + 2) + 'px';
-        localStorage.setItem('fontSize', (size + 2));
-      }
-    };
-    
-    // Decrease font
-    window.decreaseFont = () => {
-      let size = parseInt(getComputedStyle(document.body).fontSize);
-      if (size > 12) { // Min size: 12px
-        document.body.style.fontSize = (size - 2) + 'px';
-        localStorage.setItem('fontSize', (size - 2));
-      }
-    };
-  });
-</script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedSize = localStorage.getItem('fontSize') || '16';
+      document.body.style.fontSize = savedSize + 'px';
+
+      window.increaseFont = () => {
+        let size = parseInt(getComputedStyle(document.body).fontSize);
+        if (size < 24) {
+          document.body.style.fontSize = (size + 2) + 'px';
+          localStorage.setItem('fontSize', (size + 2));
+        }
+      };
+
+      window.decreaseFont = () => {
+        let size = parseInt(getComputedStyle(document.body).fontSize);
+        if (size > 12) {
+          document.body.style.fontSize = (size - 2) + 'px';
+          localStorage.setItem('fontSize', (size - 2));
+        }
+      };
+    });
+  </script>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <i class="fas fa-seedling"></i>
-                <span>Chiang Mai Herbal Wisdom</span>
-            </div>
-            <nav style="margin: 1rem 0; padding: 0.5rem; background: #f8f4e8;">
-  <a href="index.html" style="margin-right: 1rem; color: #2E5A32; font-weight: bold;">Home</a>
-  <a href="plants.html" style="margin-right: 1rem; color: #2E5A32;">Plants</a>
-  <a href="preparations.html" style="margin-right: 1rem; color: #2E5A32;">Preparations</a>
-  <a href="resources.html" style="margin-right: 1rem; color: #2E5A32;">Resources</a>
-  <a href="senior-health.html" style="margin-right: 1rem; color: #2E5A32;">Senior Health</a>
-</nav>
-            <div class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </header>
-<div class="font-controls">
-  <button onclick="decreaseFont()">A–</button>
-  <button onclick="increaseFont()">A+</button>
-</div>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Discover Nature's Pharmacy</h1>
-                <p>Explore the rich tradition of medicinal plants in Northern Thailand, with a focus on their vital role in senior healthcare and chronic disease management.</p>
-                <div class="cta-buttons">
-                    <a href="plants.html" class="btn btn-primary">Explore Plants</a>
-                    <a href="resources.html" class="btn btn-secondary">Download Guide</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Featured Plants -->
-    <section class="featured-plants">
-        <div class="container">
-            <h2 class="section-title">Featured Medicinal Plants</h2>
-            <div class="plants-grid">
-                <div class="plant-card">
-                    <div class="plant-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-image"></i>
-                        </div>
-                    </div>
-                    <div class="plant-info">
-                        <h3>Turmeric</h3>
-                        <p>Anti-inflammatory, liver detox, arthritis relief</p>
-                        <a href="plants.html#turmeric" class="read-more">Learn more</a>
-                    </div>
-                </div>
-                <div class="plant-card">
-                    <div class="plant-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-image"></i>
-                        </div>
-                    </div>
-                    <div class="plant-info">
-                        <h3>Gotu Kola</h3>
-                        <p>Cognitive enhancement, wound healing, memory improvement</p>
-                        <a href="plants.html#gotu-kola" class="read-more">Learn more</a>
-                    </div>
-                </div>
-                <div class="plant-card">
-                    <div class="plant-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-image"></i>
-                        </div>
-                    </div>
-                    <div class="plant-info">
-                        <h3>Moringa</h3>
-                        <p>Nutrient supplementation, blood sugar control, immune support</p>
-                        <a href="plants.html#moringa" class="read-more">Learn more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<h2>Key Medicinal Plants of Northern Thailand</h2>
-<table border="1" cellpadding="10" cellspacing="0" style="width:100%; border-collapse: collapse; margin: 20px 0; font-size: 0.95em;">
-  <thead>
-    <tr style="background-color: #e8f5e9;">
-      <th>Plant</th>
-      <th>Province</th>
-      <th>Distance from Chiang Mai</th>
-      <th>Season</th>
-      <th>Preventive Uses</th>
-      <th>Senior Health Relevance</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Turmeric (Curcuma longa)</td><td>Chiang Mai</td><td>0 km</td><td>Year-round</td><td>Anti-inflammatory, liver detox</td><td>Reduces joint pain, supports liver health</td></tr>
-    <tr><td>Gotu Kola (Centella asiatica)</td><td>Chiang Mai</td><td>0 km</td><td>Rainy season</td><td>Cognitive enhancement, wound healing</td><td>Improves memory, treats ulcers</td></tr>
-    <tr><td>Moringa (Moringa oleifera)</td><td>Chiang Mai</td><td>0 km</td><td>Dry season</td><td>Nutrient supplementation</td><td>Combats malnutrition, diabetes</td></tr>
-    <tr><td>Butterfly Pea (Clitoria ternatea)</td><td>Lamphun</td><td>24 km</td><td>Year-round</td><td>Antioxidant</td><td>Enhances cognitive function</td></tr>
-    <tr><td>Greater Galangal (Alpinia galanga)</td><td>Lampang</td><td>76 km</td><td>Rainy season</td><td>Digestive health</td><td>Treats nausea</td></tr>
-    <tr><td>Pennywort (Hydrocotyle javanica)</td><td>Mae Hong Son</td><td>122 km</td><td>Year-round</td><td>Skin & circulation improvement</td><td>Edema relief</td></tr>
-    <tr><td>Devil’s Backbone (Cissus quadrangularis)</td><td>Chiang Rai</td><td>152 km</td><td>Year-round</td><td>Bone health</td><td>Osteoporosis prevention, fracture recovery</td></tr>
-    <tr><td>Siam Weed (Chromolaena odorata)</td><td>Nan</td><td>187 km</td><td>Rainy season</td><td>Hemostatic, wound care</td><td>Topical healing for seniors</td></tr>
-    <tr><td>Black Ginger (Kaempferia parviflora)</td><td>Phayao</td><td>136 km</td><td>Dry season</td><td>Aphrodisiac, vitality</td><td>Reduces fatigue</td></tr>
-    <tr><td>Andrographis (Andrographis paniculata)</td><td>Nationwide</td><td>–</td><td>Year-round</td><td>Immune support</td><td>Flu & respiratory infection prevention</td></tr>
-  </tbody>
-</table>
-    <!-- Key Benefits -->
-    <section class="benefits">
-        <div class="container">
-            <h2 class="section-title">Why Choose Traditional Herbal Wisdom?</h2>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>Senior Health Focus</h3>
-                    <p>Specifically curated for common senior health concerns and chronic disease management.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <h3>Natural & Safe</h3>
-                    <p>Time-tested remedies with comprehensive safety guidelines and herb-drug interaction warnings.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <h3>Research-Based</h3>
-                    <p>Information sourced from Chiang Mai University and Thai Traditional Medicine research.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Font Size Controls -->
+  <div class="font-controls">
+    <button onclick="decreaseFont()">A–</button>
+    <button onclick="increaseFont()">A+</button>
+  </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div style="margin-top: 2rem; padding: 1.5rem; background: #f0f9f4; border-left: 4px solid #2E5A32;">
-  <h3>Start Your Herbal Journey</h3>
-  <p>Explore our guide to senior-friendly medicinal plants of Northern Thailand—safe, research-backed, and rooted in tradition.</p>
-  <a href="plants.html" style="display: inline-block; margin-top: 0.5rem; padding: 0.5rem 1.2rem; background: #2E5A32; color: white; text-decoration: none; border-radius: 4px;">
-    View Plants
-  </a>
-</div>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <i class="fas fa-seedling"></i>
-                    <span>Chiang Mai Herbal Wisdom</span>
-                </div>
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="plants.html">Plants Database</a></li>
-                        <li><a href="preparations.html">Preparations</a></li>
-                        <li><a href="senior-health.html">Senior Health</a></li>
-                        <li><a href="safety.html">Safety Guidelines</a></li>
-                        <li><a href="resources.html">Resources</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Chiang Mai Herbal Wisdom. Based on research from Chiang Mai University and Thai Traditional Medicine sources.</p>
-            </div>
-        </div>
-    </footer>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <i class="fas fa-seedling"></i>
+        <span>Chiang Mai Herbal Wisdom</span>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="plants.html">Plants</a></li>
+          <li><a href="preparations.html">Preparations</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="senior-health.html">Senior Health</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
 
-    <script src="script.js"></script>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Discover Nature's Pharmacy</h1>
+        <p>Explore the rich tradition of medicinal plants in Northern Thailand, with a focus on their vital role in senior healthcare and chronic disease management.</p>
+        <div class="cta-buttons">
+          <a href="plants.html" class="btn btn-primary">Explore Plants</a>
+          <a href="resources.html" class="btn btn-secondary">Download Guide</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Plants -->
+  <section class="featured-plants">
+    <div class="container">
+      <h2 class="section-title">Featured Medicinal Plants</h2>
+      <div class="plants-grid">
+        <div class="plant-card">
+          <div class="plant-image">
+            <div class="image-placeholder">
+              <i class="fas fa-image"></i>
+            </div>
+          </div>
+          <div class="plant-info">
+            <h3>Turmeric</h3>
+            <p>Anti-inflammatory, liver detox, arthritis relief</p>
+            <a href="plants.html#turmeric" class="read-more">Learn more</a>
+          </div>
+        </div>
+        <div class="plant-card">
+          <div class="plant-image">
+            <div class="image-placeholder">
+              <i class="fas fa-image"></i>
+            </div>
+          </div>
+          <div class="plant-info">
+            <h3>Gotu Kola</h3>
+            <p>Cognitive enhancement, wound healing, memory improvement</p>
+            <a href="plants.html#gotu-kola" class="read-more">Learn more</a>
+          </div>
+        </div>
+        <div class="plant-card">
+          <div class="plant-image">
+            <div class="image-placeholder">
+              <i class="fas fa-image"></i>
+            </div>
+          </div>
+          <div class="plant-info">
+            <h3>Moringa</h3>
+            <p>Nutrient supplementation, blood sugar control, immune support</p>
+            <a href="plants.html#moringa" class="read-more">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full Plant Table -->
+  <div class="container" style="padding: 0 20px 60px;">
+    <h2>Key Medicinal Plants of Northern Thailand</h2>
+    <table border="1" cellpadding="10" cellspacing="0" style="width:100%; border-collapse: collapse; margin: 20px 0; font-size: 0.95em;">
+      <thead>
+        <tr style="background-color: #e8f5e9;">
+          <th>Plant</th>
+          <th>Province</th>
+          <th>Distance from Chiang Mai</th>
+          <th>Season</th>
+          <th>Preventive Uses</th>
+          <th>Senior Health Relevance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Turmeric (Curcuma longa)</td><td>Chiang Mai</td><td>0 km</td><td>Year-round</td><td>Anti-inflammatory, liver detox</td><td>Reduces joint pain, supports liver health</td></tr>
+        <tr><td>Gotu Kola (Centella asiatica)</td><td>Chiang Mai</td><td>0 km</td><td>Rainy season</td><td>Cognitive enhancement, wound healing</td><td>Improves memory, treats ulcers</td></tr>
+        <tr><td>Moringa (Moringa oleifera)</td><td>Chiang Mai</td><td>0 km</td><td>Dry season</td><td>Nutrient supplementation</td><td>Combats malnutrition, diabetes</td></tr>
+        <tr><td>Butterfly Pea (Clitoria ternatea)</td><td>Lamphun</td><td>24 km</td><td>Year-round</td><td>Antioxidant</td><td>Enhances cognitive function</td></tr>
+        <tr><td>Greater Galangal (Alpinia galanga)</td><td>Lampang</td><td>76 km</td><td>Rainy season</td><td>Digestive health</td><td>Treats nausea</td></tr>
+        <tr><td>Pennywort (Hydrocotyle javanica)</td><td>Mae Hong Son</td><td>122 km</td><td>Year-round</td><td>Skin & circulation improvement</td><td>Edema relief</td></tr>
+        <tr><td>Devil’s Backbone (Cissus quadrangularis)</td><td>Chiang Rai</td><td>152 km</td><td>Year-round</td><td>Bone health</td><td>Osteoporosis prevention, fracture recovery</td></tr>
+        <tr><td>Siam Weed (Chromolaena odorata)</td><td>Nan</td><td>187 km</td><td>Rainy season</td><td>Hemostatic, wound care</td><td>Topical healing for seniors</td></tr>
+        <tr><td>Black Ginger (Kaempferia parviflora)</td><td>Phayao</td><td>136 km</td><td>Dry season</td><td>Aphrodisiac, vitality</td><td>Reduces fatigue</td></tr>
+        <tr><td>Andrographis (Andrographis paniculata)</td><td>Nationwide</td><td>–</td><td>Year-round</td><td>Immune support</td><td>Flu & respiratory infection prevention</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Benefits Section -->
+  <section class="benefits">
+    <div class="container">
+      <h2 class="section-title">Why Choose Traditional Herbal Wisdom?</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3>Senior Health Focus</h3>
+          <p>Specifically curated for common senior health concerns and chronic disease management.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3>Natural & Safe</h3>
+          <p>Time-tested remedies with comprehensive safety guidelines and herb-drug interaction warnings.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3>Research-Based</h3>
+          <p>Information sourced from Chiang Mai University and Thai Traditional Medicine research.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div style="margin-top: 2rem; padding: 1.5rem; background: #f0f9f4; border-left: 4px solid #2E5A32;">
+      <h3>Start Your Herbal Journey</h3>
+      <p>Explore our guide to senior-friendly medicinal plants of Northern Thailand—safe, research-backed, and rooted in tradition.</p>
+      <a href="plants.html" style="display: inline-block; margin-top: 0.5rem; padding: 0.5rem 1.2rem; background: #2E5A32; color: white; text-decoration: none; border-radius: 4px;">
+        View Plants
+      </a>
+    </div>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <i class="fas fa-seedling"></i>
+          <span>Chiang Mai Herbal Wisdom</span>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="plants.html">Plants Database</a></li>
+            <li><a href="preparations.html">Preparations</a></li>
+            <li><a href="senior-health.html">Senior Health</a></li>
+            <li><a href="safety.html">Safety Guidelines</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Chiang Mai Herbal Wisdom. Based on research from Chiang Mai University and Thai Traditional Medicine sources.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.querySelector('.mobile-menu-btn');
+      const nav = document.querySelector('.nav ul');
+      
+      if (toggle && nav) {
+        toggle.addEventListener('click', () => {
+          nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+        });
+      }
+    });
+  </script>
 </body>
 </html>
